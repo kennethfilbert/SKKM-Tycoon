@@ -1,0 +1,26 @@
+.button-one, .button-two, .button-three{
+    text-align: center;
+    cursor: pointer;
+    font-size:24px;
+  }
+  
+  /*Button One*/
+  .button-one {
+    margin-left: 10px;
+    padding:10px 30px;
+    outline: none;
+    background-color: #cacfd2;
+    border: none;
+    border-radius:5px;
+    box-shadow: 0 9px #a0a4a5;
+    font-size: 14pt;
+  }
+  
+  .button-one:active {
+    background-color: #cacfd2;
+    box-shadow: 0 5px #a0a4a5;
+    transform: translateY(4px);
+  }
+  .button-one:hover{
+    transform:scale(1.03);
+  }

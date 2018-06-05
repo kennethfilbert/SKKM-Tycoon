@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="cloud.css">
+    <link rel="stylesheet" href="button.css">
+    <link rel="stylesheet" href="grid.css">
+    <script src="script.js"></script>
+    <title>SKKM Tycoon</title>
+</head>
+<body class="bg" onload="init()">
+    <!-- Cloud Background -->
+    <div id="background-wrap">
+        <div class="x1">
+            <div class="cloud"></div>
+        </div>
+
+        <div class="x2">
+            <div class="cloud"></div>
+        </div>
+
+        <div class="x3">
+            <div class="cloud"></div>
+        </div>
+
+        <div class="x4">
+            <div class="cloud"></div>
+        </div>
+
+        <div class="x5">
+            <div class="cloud"></div>
+        </div>
+    </div>
+    <!-- Tanah -->
+    <div class="tanah"></div>
+    <!-- Gedung UMN -->
+    <img id="game-hero" class="game-hero" src="">
+    <!-- Stats -->
+    <div class="row">
+        <div class="col-2">
+            <div id="powerup" class="col-11 center">
+                <img src="powerup.png" style="width:120px;height:80px;">
+            </div>
+            <div id="Gedung-B" class="col-12 glass">
+                <div style="margin-top:20px;margin-bottom:0px;">
+                    <b style="margin-left: 60px; margin-top: 0px; margin-bottom: 0px;"> UPGRADES</b>
+                    <br>
+                    <br>
+                    <div style="margin-top: 10px; margin-bottom: 10px;">
+                        <div id="seminarDiv" class="upgrades" style="background:rgba(255, 255, 255, 0.6)">
+                            <b class="col-12 center">IKUT SEMINAR</b>
+                            <div class="col-12">
+                                <p class="pad">Level: <span id="seminarLevel">10</span><br>
+                                Produksi SKKM: <span id="seminarSkkm">12</span></p>
+                            </div>
+                            <button id="seminar" class="button-one col-10" style="margin-right:10px;">UPGRADE<br>COST: <span id="seminarCost">50</span></button>
+                            <br><br>
+                        </div>
+                        <div class="col-12">&nbsp;</div>
+                        <div id="workshopDiv" class="upgrades" style="background:rgba(255, 255, 255, 0.6)">
+                            <b class="col-12 center">IKUT WORKSHOP</b>
+                            <div class="col-12">
+                                <p class="pad">Level: <span id="workshopLevel">10</span><br>
+                                Produksi SKKM: <span id="workshopSkkm">12</span></p>
+                            </div>
+                            <button id="workshop" class="button-one col-10" style="margin-right:10px;">UPGRADE<br>COST: <span id="workshopCost">50</span></button>
+                            <br><br>
+                        </div>
+                        <div class="col-12">&nbsp;</div>
+                        <div id="organisasiDiv" class="upgrades" style="background:rgba(255, 255, 255, 0.6)">
+                            <b class="col-12 center">IKUT ORGANISASI</b>
+                            <div class="col-12">
+                                <p class="pad">Level: <span id="organisasiLevel">10</span><br>
+                                Produksi SKKM: <span id="organisasiSkkm">12</span></p>
+                            </div>
+                            <button id="organisasi" class="button-one col-10" style="margin-right:10px;">UPGRADE<br>COST: <span id="organisasiCost">50</span></button>
+                            <br><br>
+                        </div>
+                        <div class="col-12">&nbsp;</div>
+                        <div id="lombaDiv" class="upgrades" style="background:rgba(255, 255, 255, 0.6)">
+                            <b class="col-12 center">IKUT LOMBA</b>
+                            <div class="col-12">
+                                <p class="pad">Level: <span id="lombaLevel">10</span><br>
+                                Produksi SKKM: <span id="lombaSkkm">12</span></p>
+                            </div>
+                            <button id="lomba" class="button-one col-10" style="margin-right:10px;">UPGRADE<br>COST: <span id="lombaCost">50</span></button>
+                            <br><br>
+                        </div>
+                        <button class="button-one col-10" style="margin-right:10px;"> Minat dan bakat</button>
+                        <br>
+                        <br>
+                        <button class="button-one col-10" style="margin-right:10px;"> organisasi</button>
+                        <br>
+                        <br>
+                        <button class="button-one col-10" style="margin-right:10px;"> ilmu dan penalaran</button> 
+                        <br>
+                        <br>                    
+                        <button class="button-one col-10" style="margin-right:10px;"> PlaceHolder5</button>
+                        <br>
+                        <br>
+                        <button class="button-one col-10" style="margin-right:10px;"> PlaceHolder6</button>
+                        <br>
+                        <br>
+                        <button class="button-one col-10" style="margin-right:10px;"> PlaceHolder7</button>
+                        <br>
+                        <br>
+                        <button class="button-one col-10" style="margin-right:10px;"> PlaceHolder8</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container col-8"> 
+            <div class="row">
+                <div class="col-2"></div>
+                <div class="stats col-4" id="stats">
+                    <h2 class="money center" id="money">SKKM Money:  <span id="skkm">22323</span></h2>
+                    <p class="center">Auto SKKM: <span id="autoSkkm">322222</span></p>
+                </div>
+                <div class="col-2">
+                    <button id="save" class="button-one col-12">Save</button>
+                </div>
+                <div class="col-2">
+                    <button id="load" class="button-one col-12">Load</button>
+                </div>
+            </div>
+            <div id="sliderSave" class="slider closed">
+                <div class="row">
+                    <div class="col-11">
+                         <textarea name="savefile" class="col-12" id="savefile" style="width:468px;height:80px"></textarea> 
+                    </div>
+                    <div class="col-11">Your file have been saved, if you want to make a backup of your file, paste this to Notepad</div>
+                    <div class="col-12">&nbsp;</div><div class="col-12">&nbsp;</div>
+                    <div class="col-4"></div>
+                    <button id="closesave" class="button-one">Close</button>
+                    <div class="col-12">&nbsp;</div>
+                    <div class="col-4"></div>
+                    <div class="col-4"><a href="" id="reset2" class="center">Reset Data</a></span></div>
+                </div>
+            </div>
+            <div id="sliderLoad" class="slider closed">
+                <div class="row">
+                    <div class="col-11">
+                        <textarea name="loadfile" class="col-12" id="loadfile" style="width:468px;height:80px"></textarea> 
+                    </div>
+                    <div class="col-11">Paste your backup savefile here</div>
+                    <div class="col-12">&nbsp;</div><div class="col-12">&nbsp;</div>
+                    <div class="col-2"></div>
+                    <button id="loadtext" class="button-one col-3">Load</button>
+                    <button id="closeload" class="button-one col-3">Close</button>
+                    <div class="col-12">&nbsp;</div>
+                    <div class="col-4"></div>
+                    <div class="col-4"><a href="" id="reset" class="center">Reset Data</a></span></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+      
+</body>
+</html>
